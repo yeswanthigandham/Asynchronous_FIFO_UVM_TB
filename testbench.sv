@@ -7,7 +7,7 @@ import uvm_pkg::*;
   // -------------------------------------------------
   // Global testbench parameters
   // -------------------------------------------------
-parameter int DEPTH=8;
+parameter int DEPTH=16;
 parameter int DATA_WIDTH=8;
 
 
@@ -457,17 +457,16 @@ module tb_top;
     .empty(vif.empty)
   );
 
-// Clock generation
+// Write Clock generation
   initial begin
-    vif.wclk = 0;
-    
+    vif.wclk = 0; 
     forever #5 vif.wclk = ~vif.wclk;   // 100 MHz
-   // forever #5 rclk = ~rclk;   // 100 MHz
   end
-  
+
+  //Read Clock generation
   initial begin
     vif.rclk= 0;
-    forever #8 vif.rclk = ~vif.rclk;   // 100 MHz
+    forever #10 vif.rclk = ~vif.rclk;   // 50 MHz
   end
   
 
