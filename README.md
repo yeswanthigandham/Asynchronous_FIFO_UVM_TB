@@ -18,7 +18,8 @@ Asynchronous_FIFO_UVM_TB/
 ├── design.sv                            # Asynchronous FIFO RTL and submodules
 ├── testbench.sv                         # UVM testbench (tb_pkg + tb_top)
 ├── images/Block_Diagram.png             # Design Block Diagram
-├── waveforms/Async_FIFO_Waveform.png    # Waveform     
+├── waveforms/Async_FIFO_Waveform.png    # Waveform
+|── output_log.txt                       # Output Log 
 └── README.md                            # Project documentation
 ```
 
