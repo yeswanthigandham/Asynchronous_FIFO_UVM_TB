@@ -1,0 +1,254 @@
+[2026-02-21 20:15:28 UTC] vlib work && vlog '-timescale' '1ns/1ns' +incdir+$RIVIERA_HOME/vlib/uvm-1.2/src -l uvm_1_2 -err VCP2947 W9 -err VCP2974 W9 -err VCP3003 W9 -err VCP5417 W9 -err VCP6120 W9 -err VCP7862 W9 -err VCP2129 W9 design.sv testbench.sv  && vsim -c -do "vsim +access+r; run -all; exit"  
+VSIMSA: Configuration file changed: `/home/runner/library.cfg'
+ALIB: Library "work" attached.
+work = ./work/work.lib
+MESSAGE_SP VCP2124 "Package uvm_pkg found in library uvm_1_2."
+WARNING VCP2803 "Function this.randomize result is ignored." "testbench.sv" 62  25
+WARNING VCP2803 "Function this.randomize result is ignored." "testbench.sv" 87  25
+MESSAGE "Unit top modules: tb_top."
+SUCCESS "Compile success 0 Errors 2 Warnings  Analysis time: 6[s]."
+done
+# Aldec, Inc. Riviera-PRO version 2025.04.139.9738 built for Linux64 on May 30, 2025.
+# HDL, SystemC, and Assertions simulator, debugger, and design environment.
+# (c) 1999-2025 Aldec, Inc. All rights reserved.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 The "uvm_pkg" design unit does not have a time unit/precision defined but other design units do.
+# ELBREAD: Elaboration time 0.7 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/usr/share/Riviera-PRO/bin/libsystf.so'
+# ELAB2: Create instances ...
+# KERNEL: Info: Loading library:  /usr/share/Riviera-PRO/bin/uvm_1_2_dpi
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.1 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 0 primitives and 18 (72.00%) other processes in SLP
+# SLP: 74 (0.23%) signals in SLP and 21 (0.07%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.7 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 30076 kB (elbread=2207 elab2=22640 kernel=5227 sdf=0)
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.2
+# KERNEL: (C) 2007-2014 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2014 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2014 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: (C) 2013-2014 NVIDIA Corporation
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test test...
+# KERNEL: UVM_INFO /home/runner/testbench.sv(64) @ 0: uvm_test_top.env1.wragent1.wrseqr1@@wrseq1 [wrseq] generating write txns=69 
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(88) @ 0: uvm_test_top.env1.rdagent1.rdseqr1@@rdseq1 [rdseq] generating read txns=58 
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 45000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=e3
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 55000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=b7
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 75000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=7e
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 85000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=71
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 95000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=19
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 125000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=4f
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 130000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=e3
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 130000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=e3 exp=e3
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 135000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=cb
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 145000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=fc
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 150000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=b7
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 150000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=b7 exp=b7
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 165000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=7d
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 175000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=cd
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 190000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=7e
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 190000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=7e exp=7e
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 195000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=8c
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 205000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=fb
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 210000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=71
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 210000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=71 exp=71
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 215000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=1f
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 225000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=f8
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 230000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=19
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 230000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=19 exp=19
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 245000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=c9
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 250000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=4f
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 250000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=4f exp=4f
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 255000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=c1
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 275000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=d0
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 285000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=e7
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 290000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=cb
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 290000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=cb exp=cb
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 310000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=fc
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 310000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=fc exp=fc
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 330000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=7d
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 330000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=7d exp=7d
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 335000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=f5
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 345000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=4a
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 350000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=cd
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 350000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=cd exp=cd
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 365000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=13
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 370000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=8c
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 370000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=8c exp=8c
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 385000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=b0
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 390000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=fb
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 390000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=fb exp=fb
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 395000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=8e
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 405000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=21
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 410000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=1f
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 410000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=1f exp=1f
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 415000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=69
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 425000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=66
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 430000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=f8
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 430000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=f8 exp=f8
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 435000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=18
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 450000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=c9
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 450000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=c9 exp=c9
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 455000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=9b
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 470000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=c1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 470000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=c1 exp=c1
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 475000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=f2
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 485000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=2d
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 490000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=d0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 490000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=d0 exp=d0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 510000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=e7
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 510000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=e7 exp=e7
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 530000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=f5
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 530000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=f5 exp=f5
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 535000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=ef
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 545000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=68
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 550000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=4a
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 550000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=4a exp=4a
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 565000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=79
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 585000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=5e
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 590000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=13
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 590000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=13 exp=13
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 595000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=60
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 605000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=17
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 610000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=b0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 610000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=b0 exp=b0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 625000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=a4
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 630000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=8e
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 630000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=8e exp=8e
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 650000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=21
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 650000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=21 exp=21
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 655000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=45
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 675000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=e4
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(357) @ 685000: uvm_test_top.env1.scoreboard1 [scoreboard] PUSHING DATA IN REF_FIFO=43
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 690000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=69
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 690000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=69 exp=69
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 710000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=66
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 710000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=66 exp=66
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 750000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=18
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 750000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=18 exp=18
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 770000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=9b
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 770000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=9b exp=9b
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 790000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=f2
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 790000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=f2 exp=f2
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 850000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=2d
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 850000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=2d exp=2d
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 870000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=ef
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 870000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=ef exp=ef
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 890000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=68
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 890000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=68 exp=68
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 930000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=79
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 930000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=79 exp=79
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 950000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=5e
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 950000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=5e exp=5e
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 990000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=60
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 990000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=60 exp=60
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 1010000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=17
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 1010000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=17 exp=17
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 1030000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=a4
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 1030000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=a4 exp=a4
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 1050000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=45
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 1050000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=45 exp=45
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 1110000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=e4
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 1110000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=e4 exp=e4
+# KERNEL: UVM_INFO /home/runner/testbench.sv(364) @ 1150000: uvm_test_top.env1.scoreboard1 [scoreboard] POP DATA=43
+# KERNEL: UVM_INFO /home/runner/testbench.sv(366) @ 1150000: uvm_test_top.env1.scoreboard1 [scoreboard] SCBD DATA MATCHED Actual=43 exp=43
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_objection.svh(1271) @ 1150000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# KERNEL: UVM_INFO ./uvm-1.2/src/base/uvm_report_server.svh(869) @ 1150000: reporter [UVM/REPORT/SERVER] 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :  125
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [RNTST]     1
+# KERNEL: [TEST_DONE]     1
+# KERNEL: [UVM/RELNOTES]     1
+# KERNEL: [rdseq]     1
+# KERNEL: [scoreboard]   120
+# KERNEL: [wrseq]     1
+# KERNEL: 
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (521): $finish called.
+# KERNEL: Time: 1150 ns,  Iteration: 68,  Instance: /tb_top,  Process: @INITIAL#488_3@.
+# KERNEL: stopped at time: 1150 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: Simulation has finished.
+Finding VCD file...
+./dump.vcd
+[2026-02-21 20:15:43 UTC] Opening EPWave...
+Done
