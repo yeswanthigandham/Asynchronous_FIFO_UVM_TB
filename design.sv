@@ -2,7 +2,7 @@
 // Original source: https://vlsiverify.com/verilog/verilog-codes/asynchronous-fifo/
 // Integrated with custom UVM testbench for verification practice
 
-interface intf #(parameter DEPTH=8, DATA_WIDTH=8) ;
+interface intf #(parameter DEPTH=16, DATA_WIDTH=8) ;
 logic	wclk, wrst_n;
 logic	rclk, rrst_n;
 logic	w_en, r_en;
@@ -27,7 +27,7 @@ module synchronizer #(parameter WIDTH=3) (input clk, rst_n, [WIDTH:0] d_in, outp
 endmodule
 
 //
-module wptr_handler #(parameter PTR_WIDTH=3) (
+module wptr_handler #(parameter PTR_WIDTH=4) (
   input wclk, wrst_n, w_en,
   input [PTR_WIDTH:0] g_rptr_sync,
   output reg [PTR_WIDTH:0] b_wptr, g_wptr,
@@ -64,7 +64,7 @@ module wptr_handler #(parameter PTR_WIDTH=3) (
 endmodule
 
 //
-module rptr_handler #(parameter PTR_WIDTH=3) (
+module rptr_handler #(parameter PTR_WIDTH=4) (
   input rclk, rrst_n, r_en,
   input [PTR_WIDTH:0] g_wptr_sync,
   output reg [PTR_WIDTH:0] b_rptr, g_rptr,
@@ -97,7 +97,7 @@ module rptr_handler #(parameter PTR_WIDTH=3) (
 endmodule
 
 //
-module fifo_mem #(parameter DEPTH=8, DATA_WIDTH=8, PTR_WIDTH=3) (
+module fifo_mem #(parameter DEPTH=16, DATA_WIDTH=8, PTR_WIDTH=4) (
   input wclk, w_en, rclk, r_en,
   input [PTR_WIDTH:0] b_wptr, b_rptr,
   input [DATA_WIDTH-1:0] data_in,
@@ -123,7 +123,7 @@ endmodule
 
 //
 
-module asynchronous_fifo #(parameter DEPTH=8, DATA_WIDTH=8) (
+module asynchronous_fifo #(parameter DEPTH=16, DATA_WIDTH=8) (
   input wclk, wrst_n,
   input rclk, rrst_n,
   input w_en, r_en,
