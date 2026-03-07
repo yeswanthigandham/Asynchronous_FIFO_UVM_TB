@@ -416,7 +416,7 @@ class test extends uvm_test;
 	function void build_phase(uvm_phase phase);
 		super.build_phase(phase);
 		env1=env::type_id::create("env1",this);
-		my_virtual_seq1=my_virtual_seq::type_id::create("my_virtual_seq1",this);
+		//my_virtual_seq1=my_virtual_seq::type_id::create("my_virtual_seq1",this);
 	endfunction
 	
 	task run_phase(uvm_phase phase);
